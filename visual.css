@@ -1,0 +1,48 @@
+body{
+    background-color: #ffcc00;
+    display: flex;
+    justify-content: center;
+}
+
+/*Celulares Menores*/
+@media(min-width: 576px) and (max-width: 767.98px){
+    body{
+    background-color: #ff00ff;
+    }
+}
+/*Celulares e Alguns Tablets*/
+@media(min-width: 768px) and (max-width: 991.98px){
+    body{
+    background-color: #00ff00;
+    }
+}
+/*Celulares Menores*/
+@media(min-width: 576px) and (max-width: 767.98px){
+    body{
+    background-color: #00ff00;
+    }
+}
+/*Tablets*/
+@media(min-width: 992px) and (max-width: 1199.98px){
+    body{
+    background-color: #00ffff;
+    }
+}
+/*Notebooks*/
+@media(min-width: 1200px) and (max-width: 1399.98px){
+    body{
+    background-color: #5900ff;
+    }
+}
+/*Desktop*/
+@media(min-width: 1400px){
+    body{
+    background-color: #00ff00;
+    }
+}
+h1{
+    color: black;
+}
+p{
+    color: black;
+}

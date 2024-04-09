@@ -1,0 +1,35 @@
+clear = limpa cmd.
+
+git init = inicializa o repositório git (necessário).
+
+git add . = prepara todos os arquivos a serem commitados.
+
+git add index.html = prepara o arquivo especifico.
+
+git rm --cached index.html = para desprepara-lo do commit.
+
+git commit -m "mensagem" = faz o commit dos arquivos preparados para o commit.
+
+git config --global user.name "Nome e Sobrenome" = Define o nome que todos perceberão de você.
+
+git config --global user.email "EmailExemplo@gmail.com" = Define seu email no git.
+
+git status = Status de todos os arquivos na branch. Aqueles novos arquivos, os que estao prontos para commit e os que nao estão preparados para commit, e os que foram modificados.
+
+git log = mostra os commit e por quem foram feitos.
+
+git branch = mostra todas as branchs.
+
+git branch 'nome' = cria a branch.
+
+git checkout 'nomeBranch' = muda entre as branchs.
+
+git merge 'branch' = no repositório que você quer aderir, o git merge adiciona tudo da outra branch na sua branch atual.
+
+(.gitignore) = Arquivo em que você lista os arquivos que você quer que o git ignore.
+
+git remote add 'nomeRepositórioRemoto' 'link' = linka os arquivos a esse repositório remoto, porém nao os adiciona lá.
+
+git remote = mostra os repositórios remotos.
+
+

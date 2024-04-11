@@ -32,4 +32,24 @@ git remote add 'nomeRepositórioRemoto' 'link' = linka os arquivos a esse reposi
 
 git remote = mostra os repositórios remotos.
 
+git merge 'nomedaBranchqueVoceQuerDarPull'(tem que estar dentro da branch em que voce vai aderir as modificações) = Puxa todos os arquivos da branch citada para a branch atual.
+
+git remote add origin 'linkRepositórioGithub' = adicionaum repositório remoto como o nome de 'origin' no link do repositório.
+
+git remote = mostra todas as branchs remotas.
+
+git branch -M main = muda o nome da branch principal de master para main, isto é  apenas estético.
+
+git push -u origin main = ele uploada todos os arquivos do branch main para o repositório remoto 'origin' (obs: você tem que estar na branch que voce vai mandar.).
+
+git push origin developer.
+
+(num bash git dentro da pasta desejada) git clone 'linkRepositórioGithub' = clona todos os arquivos da branch remota para a pasta desejada.
+
+git pull = atualiza todos os branchs e todos os arquivos conforme o repositório remoto ja setado.
+
+git pull origin main = atualiza apenas a branch atual.
+
+
+
 

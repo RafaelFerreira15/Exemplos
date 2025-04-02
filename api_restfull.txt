@@ -1,0 +1,25 @@
+RESTful é um estilo de arquitetura para desenvolvimento de APIs, baseado no protocolo HTTP. E para que você possa dizer que sua API é RESTful, ela precisa seguir os seguintes princípios:
+
+🌐 1. Cliente-Servidor
+Separação entre cliente e servidor para garantir escalabilidade e independência. Seu front (view/client) é uma aplicação enquanto o servidor é outra. 
+
+🔗 2. Interface Uniforme
+Uso de URIs bem definidas (Universal Resource Identifier), métodos HTTP padronizados (GET, POST, PUT, DELETE) e ter respostas consistentes. Ou seja, a API sempre retorna dados bem estruturados e previsíveis, seguindo um padrão definido.
+
+📦 3. Stateless
+Cada requisição deve conter todas as informações necessárias e o estado não é salvo no servidor. 
+
+> Por exemplo, o contexto do usuário estar logado ou não é transitado através do auth-token, e a cada requisição ele é enviado. 
+
+🚀 4. Cacheável
+Cada resposta deve indicar se pode ser armazenada em cache ou não. Caso seja, o cliente pode armazenar um cache daquele response para reusar, sem a necessidade de realizar uma nova requisição durante um período de tempo. 
+
+> Por exemplo um endpoint que retorne os dados de produto, digamos que possa ser cacheado por 24 horas pois esse dado tem baixa mutabilidade.
+
+🔄 5. Camadas
+A arquitetura pode ter camadas intermediárias (como gateways e proxies) sem afetar a funcionalidade da API.
+
+> Nesse caso, o cliente pode conectar com um API Gateway, que gerencia as requisições antes de chegarem ao serviço real ou conversar com outros serviços intermediários autorizados.
+
+🛠 6. Código Sob Demanda (Opcional)
+Permite o envio de scripts executáveis para ampliar funcionalidades do cliente.
